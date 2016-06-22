@@ -1,0 +1,25 @@
+Relation,Visibility,Object type,Relatum type,Copular form (word list),Singular genitive (word list),Plural genitive (word list),Generalizations (list),Inverse,Symmetric
+knows_about,public,person,entity,,,,,,
+interested_in,public,person,entity,be interested in,interest,interests,knows_about,,
+friend_of,public,person,person,be a friend of,friend,friends,likes,,yes
+roommate_of,public,person,person,be a roomate of,roommate,roomates,,,yes
+knows,public,person,person,,,,knows_about,,
+likes,public,person,person,,,,knows,,
+member_of,public,person,organization,be a member of,,,knows_about,,
+loves,public,person,person,,,,likes,,
+hates,public,person,person,,,,,,
+goal,public,actor,entity,,goal,goals,,,
+leads,public,person,organization,be leader of,,,member_of,,
+leader,public,organization,person,be led by,leader,leaders,,leads,
+bff,public ,person,person,be a bff of,bff,bffs,friend_of,,yes
+father,public,person,person,,father,fathers,parent,,
+father_of,public,person,person,be a father of,,,parent_of,father,
+mother,public,person,person,,mother,mothers,parent,,
+mother_of,public ,person,person,be a mother of,,,parent_of,mother,
+parent,public,person,person,,parent,parents,family,,
+parent_of,public,person,person,be a parent of,,,family,parent,
+brother,public,person,person,,brother,brothers,sibling,,
+brother_of,public,person,person,be a brother of,,,sibling,brother,
+sister,public,person,person,,sister,sisters,sibling,,
+sister_of,public,person,person,be a sister of,,,sibling,sister,
+sibling,public,person,person,,sibling,siblings,family,,yes
